@@ -1,0 +1,128 @@
+header {
+  @apply h-full text-xs z-40 sticky top-0 bg-white;
+}
+
+section {
+  @apply container mx-auto px-6;
+}
+
+.navigation {
+  @apply min-h-[calc(var(--nav-height))] container mx-auto px-6 z-40 text-xs;
+  @apply flex justify-between items-center;
+}
+nav.__nav_desktop {
+  @apply flex gap-0;
+}
+nav.__nav_mobile {
+  @apply hidden;
+}
+nav.__nav_mobile__links {
+  @apply flex flex-col gap-6 m-6 text-2xl;
+}
+
+nav.__nav_desktop a {
+  @apply text-neutral-400 whitespace-nowrap relative px-4 py-1;
+}
+nav.__nav_desktop a:is(:hover) {
+  @apply text-neutral-500;
+}
+nav.__nav_desktop a.active {
+  @apply text-neutral-800 scale-105 transition-transform;
+}
+.__nav_active_links {
+  @apply h-[3px] w-0 sm:w-1/4 mx-auto absolute bottom-0 inset-x-0 bg-neutral-500;
+}
+
+@media (max-width: 768px) {
+  nav.__nav_desktop {
+    @apply hidden;
+  }
+  nav.__nav_mobile {
+    @apply block;
+  }
+}
+
+nav.__home_menu_selection {
+  @apply text-4xl md:text-7xl font-bold flex flex-col my-12 h-fit items-start md:items-end gap-1 md:gap-3 w-full;
+}
+nav.__home_menu_selection a {
+  @apply relative text-neutral-300 py-2;
+}
+nav.__home_menu_selection a span {
+  @apply px-2 py-2 block w-full z-10;
+}
+
+nav.__home_menu_selection a:hover span {
+  @apply text-neutral-700;
+}
+
+footer {
+  @apply h-full font-thin text-neutral-400 mt-10;
+}
+footer .__footer_contact {
+  @apply container mx-auto px-6 space-y-4 flex flex-col lg:flex-row items-start lg:items-end;
+}
+
+footer .__nav_footer {
+  @apply flex gap-6 flex-col sm:flex-row w-fit;
+}
+footer .__nav_footer a {
+  @apply font-medium text-neutral-500 text-lg lg:text-xl relative;
+}
+footer .__nav_footer a:is(:hover) {
+  @apply text-neutral-700;
+}
+
+footer .__nav_footer a::after {
+  content: "";
+  @apply absolute bottom-0 w-0 h-[2px] bg-neutral-700 inset-x-0 transition-all rounded-full duration-500;
+}
+footer .__nav_footer a:is(:hover)::after {
+  content: "";
+  @apply w-1/2;
+}
+
+footer .__copyright {
+  @apply block relative w-fit mx-auto lg:mr-0 py-6 lg:py-1  whitespace-nowrap text-xs lg:text-base;
+}
+
+/**
+* MARQUEE ANIMATIOn
+**/
+.__marquee_wrapper {
+  @apply my-8 px-4 w-full relative overflow-x-hidden h-16 sm:h-24;
+}
+
+.__marquee_wrapper::before {
+  content: "";
+  @apply absolute h-full w-12 bg-gradient-to-r from-white left-0 z-10 pointer-events-none;
+}
+.__marquee_wrapper::after {
+  content: "";
+  @apply absolute h-full w-12 bg-gradient-to-l from-white right-0 z-10 pointer-events-none;
+}
+.__marquee {
+  @apply absolute w-[calc(200%)] overflow-x-hidden  h-full flex gap-6 sm:gap-16;
+}
+
+.__marquee_inner {
+  @apply flex gap-6 sm:gap-24;
+}
+
+.__marquee_icon {
+  @apply relative cursor-pointer;
+}
+.__marquee_placeholder {
+  @apply hidden absolute text-sm -bottom-0 left-1/2 -translate-x-1/2 bg-neutral-100 text-neutral-500 px-2 py-1 shadow-md whitespace-nowrap;
+}
+.__marquee_icon:is(:hover) .__marquee_placeholder {
+  @apply block z-[1];
+}
+
+.__marquee_icon span svg {
+  @apply stroke-neutral-300 grayscale h-6 sm:h-14 opacity-50;
+}
+
+.__marquee_icon:is(:hover) span svg {
+  @apply grayscale-0 opacity-100;
+}

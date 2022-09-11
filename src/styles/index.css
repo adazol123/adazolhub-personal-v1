@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nav-height: 56px;
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --nav-height: 64px;
+  }
+}
+html,
+body {
+  @apply scroll-smooth scroll-pt-14 font-poppins;
+}
+main {
+  @apply grid min-h-[calc(100vh-56px)] grid-rows-[56px_1fr_minmax(min-content,130px)];
+}
+
+body {
+  @apply min-h-screen bg-white;
+}
+
+@media (min-midth: 640px) {
+  h1 {
+    @apply text-3xl font-light text-neutral-700;
+  }
+  h1 span {
+    @apply font-bold bg-neutral-700 text-white px-2 rounded;
+  }
+  h3 {
+    @apply text-xl max-w-[30ch] font-light;
+  }
+
+  h4 {
+    @apply text-lg font-thin;
+  }
+}
+@media (min-midth: 1200px) {
+  h1 {
+    @apply text-6xl font-light text-neutral-700;
+  }
+  h1 span {
+    @apply font-medium bg-neutral-50 text-neutral-700 px-2 rounded;
+  }
+  h3 {
+    @apply text-3xl max-w-[30ch] font-light;
+  }
+
+  h4 {
+    @apply text-2xl font-thin;
+  }
+}
+h1 {
+  @apply text-5xl font-light text-neutral-700;
+}
+h1 span {
+  @apply font-normal bg-neutral-700 text-white px-2 rounded;
+}
+h3 {
+  @apply text-2xl max-w-[40ch] font-medium text-neutral-600;
+}
+
+h4 {
+  @apply text-2xl font-bold;
+}
+
+p {
+  @apply text-base;
+}
+
+button {
+  @apply border px-6 py-2 rounded-full;
+}
+
+button:is(:hover, :focus) {
+  @apply bg-neutral-700 text-white;
+}
