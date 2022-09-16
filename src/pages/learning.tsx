@@ -14,6 +14,10 @@ let links = {
             name: 'Zustand',
             url: 'zustand'
         },
+        {
+            name: 'Image Preview',
+            url: 'image-preview'
+        },
     ],
     animation: [
 

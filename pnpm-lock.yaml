@@ -4,6 +4,7 @@ specifiers:
   '@juggle/resize-observer': ^3.4.0
   '@tanstack/react-query': ^4.2.3
   '@tanstack/react-query-devtools': ^4.2.3
+  '@types/prismjs': ^1.26.0
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.1
@@ -11,6 +12,7 @@ specifiers:
   firebase: ^9.9.3
   framer-motion: ^7.2.1
   postcss: ^8.4.16
+  prismjs: ^1.29.0
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: '6'
@@ -26,6 +28,7 @@ dependencies:
   '@tanstack/react-query-devtools': 4.2.3_7jugwuuqrrr4f74u7dtzjsintq
   firebase: 9.9.3
   framer-motion: 7.2.1_biqbaboplfbrettd7655fr4n2y
+  prismjs: 1.29.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
@@ -33,6 +36,7 @@ dependencies:
   zustand: 4.1.1_react@18.2.0
 
 devDependencies:
+  '@types/prismjs': 1.26.0
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.0.1_vite@3.0.9
@@ -1045,6 +1049,10 @@ packages:
     resolution: {integrity: sha512-6bbDaETVi8oyIARulOE9qF1/Qdi/23z6emrUh0fNJRUmjznqrixD4MpGDdgOFk5Xb0m2H6Xu42JGdvAxaJR/wA==}
     dev: false
 
+  /@types/prismjs/1.26.0:
+    resolution: {integrity: sha512-ZTaqn/qSqUuAq1YwvOFQfVW1AR/oQJlLSZVustdjwI+GZ8kr0MSHBj0tsXPW1EqHubx50gtBEjbPGsdZwQwCjQ==}
+    dev: true
+
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
@@ -2008,6 +2016,11 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
+
+  /prismjs/1.29.0:
+    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
+    engines: {node: '>=6'}
+    dev: false
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}

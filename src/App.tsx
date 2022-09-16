@@ -19,6 +19,7 @@ import LearningLayout from './layouts/LearningLayout';
 import FormStep from './components/learning/FormStep'
 import GettingStarted from './components/learning/GettingStarted'
 import useScrollToTop from './utils/helper/useScrollToTop';
+import ImagePreviewWithFileReader from './components/learning/ImagePreviewWithFileReader'
 
 const queryClient = new QueryClient()
 
@@ -51,6 +52,7 @@ function App() {
             <Route path='/learning' element={<Learning />} >
               <Route index element={<GettingStarted />} />
               <Route path='zustand' element={<LearningLayout />} />
+              <Route path='image-preview' element={<ImagePreviewWithFileReader />} />
               <Route path='form-stepper' element={<FormStep />} />
             </Route>
             <Route path='/contact' element={<Contact />} />
