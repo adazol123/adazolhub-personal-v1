@@ -6,7 +6,7 @@ import App from './App'
 import './styles/index.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-
+  
 
   <React.StrictMode>
     <AnimatePresence mode='wait' >

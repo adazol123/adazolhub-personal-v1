@@ -15,15 +15,26 @@ const Learning = React.lazy(() => import('./pages/learning'))
 const Projects = React.lazy(() => import('./pages/projects'))
 const UXCaseStudy = React.lazy(() => import('./pages/ux-case-study'))
 import './styles/App.css'
+import LearningLayout from './layouts/LearningLayout';
+import FormStep from './components/learning/FormStep'
+import GettingStarted from './components/learning/GettingStarted'
+import useScrollToTop from './utils/helper/useScrollToTop';
 
 const queryClient = new QueryClient()
 
 function App() {
+  useScrollToTop()
   const [count, setCount] = useState(0)
   const menuState = useToggleStore(state => state.menu)
   return (
     <QueryClientProvider client={queryClient}>
-      <React.Suspense fallback={<div>Loading ...</div>}>
+      <React.Suspense fallback={<div className='min-h-screen grid place-content-center place-items-center gap-2'>
+        <h5>ADAZOLHUB</h5>
+        <p>
+          Loading ...
+
+        </p>
+      </div>}>
 
         <main>
 
@@ -37,7 +48,11 @@ function App() {
             </Route>
             <Route path='/projects' element={<Projects />} />
             <Route path='/ux-case-study' element={<UXCaseStudy />} />
-            <Route path='/learning' element={<Learning />} />
+            <Route path='/learning' element={<Learning />} >
+              <Route index element={<GettingStarted />} />
+              <Route path='zustand' element={<LearningLayout />} />
+              <Route path='form-stepper' element={<FormStep />} />
+            </Route>
             <Route path='/contact' element={<Contact />} />
           </Routes>
           <FooterContact />

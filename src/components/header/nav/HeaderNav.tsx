@@ -9,18 +9,21 @@ const HeaderNav = () => {
     const [ref, { width }] = useMeasure({ polyfill: ResizeObserver })
     const { pathname } = useLocation()
     return (
-        <header ref={ref}>
-            <div className="navigation">
-                <Link to={'/'}>
-                    <span >Adazolhub | Personal</span>
-                </Link>
-                {
-                    pathname !== '/' && (width > 768 ?
-                        <NavLinksDesktop /> :
-                        <NavLinksMobile />)
-                }
-            </div>
-        </header>
+        <>
+            <header ref={ref}>
+                <div className="navigation">
+                    <Link to={'/'}>
+                        <span >Adazolhub | Personal</span>
+                    </Link>
+                    {
+                        pathname !== '/' && (width > 768 ?
+                            <NavLinksDesktop /> :
+                            <NavLinksMobile />)
+                    }
+                </div>
+
+            </header>
+        </>
     )
 }
 

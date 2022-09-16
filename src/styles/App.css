@@ -17,7 +17,10 @@ nav.__nav_mobile {
   @apply hidden;
 }
 nav.__nav_mobile__links {
-  @apply flex flex-col gap-6 m-6 text-2xl;
+  @apply flex flex-col gap-6 m-6 text-2xl font-semibold text-neutral-500;
+}
+nav.__nav_mobile__links a:is(:hover, :focus) {
+  @apply text-neutral-700;
 }
 
 nav.__nav_desktop a {
@@ -67,7 +70,7 @@ footer .__nav_footer {
   @apply flex gap-6 flex-col sm:flex-row w-fit;
 }
 footer .__nav_footer a {
-  @apply font-medium text-neutral-500 text-lg lg:text-xl relative;
+  @apply font-medium text-neutral-500 text-xs lg:text-xl relative;
 }
 footer .__nav_footer a:is(:hover) {
   @apply text-neutral-700;
@@ -106,7 +109,7 @@ footer .__copyright {
 }
 
 .__marquee_inner {
-  @apply flex gap-6 sm:gap-24;
+  @apply flex gap-4 sm:gap-16;
 }
 
 .__marquee_icon {
@@ -125,4 +128,15 @@ footer .__copyright {
 
 .__marquee_icon:is(:hover) span svg {
   @apply grayscale-0 opacity-100;
+}
+
+button._solid {
+  @apply bg-neutral-600 text-white;
+}
+
+button._ghost {
+  @apply border-none text-neutral-500 font-semibold;
+}
+button._ghost:is(:hover, :focus) {
+  @apply bg-neutral-700/5 text-neutral-700;
 }

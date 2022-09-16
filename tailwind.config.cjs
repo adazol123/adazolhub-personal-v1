@@ -26,7 +26,7 @@ module.exports = {
         },
       },
       animation: {
-        marquee_loop: "marquee  60s linear infinite",
+        marquee_loop: "marquee  30s linear infinite",
         maarquee_loop_reverse: "marquee_reverse 60s linear infinite",
       },
       fontFamily: {
@@ -35,6 +35,7 @@ module.exports = {
     },
   },
   plugins: [],
+  important: true,
 };
 
 // animation: {
