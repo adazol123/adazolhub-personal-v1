@@ -84,13 +84,16 @@ const ImagePreviewWithFileReader = (props: Props) => {
                 </div>
             </div>
 
-            <div>
+            <div className='relative flex flex-col'>
                 <h5>Sample Code</h5>
-                <pre className='rounded-md overflow-hidden'>
-                    <code className='language-javascript'>
-                        {code}
-                    </code>
-                </pre>
+                <div className='relative inset-0'>
+
+                    <pre className='rounded-md overflow-hidden  overflow-x-auto'>
+                        <code className='language-javascript'>
+                            {code}
+                        </code>
+                    </pre>
+                </div>
             </div>
         </div>
     )

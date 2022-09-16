@@ -10,8 +10,14 @@ const Projects = () => {
                     <p className='max-w-[100ch] mt-4'>Here are some of my project showcase during my learning journey as web developer.</p>
                 </div>
                 <div className='relative h-28 w-full overflow-hidden rounded-xl'>
-
-                    <img src="https://images.unsplash.com/photo-1501959181532-7d2a3c064642?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=893&q=80" alt="" className='w-full h-full object-cover absolute inset-0' />
+                    {
+                        /**
+                         * @credits Mohammad Rahmani
+                         * @profile https://unsplash.com/@afgprogrammer
+                         * @url https://unsplash.com/photos/FzRC1FO1KFo
+                         */
+                    }
+                    <img src="https://images.unsplash.com/photo-1607799467885-2c1eb73005bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" className='w-full h-full object-cover absolute inset-0' />
                 </div>
                 {/* <p className='absolute bottom-0 left-0 z-10 h-60 text-black'>Project</p> */}
 

@@ -75,9 +75,17 @@ const Learning = () => {
                     </motion.div>}
                 </AnimatePresence>
             </aside>
-            <section className='flex flex-col mt-16 text-neutral-400'>
-                <h4>Learning</h4>
-
+            <section className='flex flex-col  text-neutral-400'>
+                <div className='relative h-28 w-full overflow-hidden rounded-xl'>
+                    {
+                        /**
+                         * @credits David Travis
+                         * @profile https://unsplash.com/@dtravisphd
+                         * @url https://unsplash.com/photos/5bYxXawHOQg
+                         */
+                    }
+                    <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" className='w-full h-full object-cover absolute inset-0' />
+                </div>
                 <div className='flex gap-6 mt-10'>
 
                     <div className='min-w-[160px] hidden md:flex flex-col gap-6 sticky top-16 self-start'>
@@ -105,6 +113,7 @@ const Learning = () => {
                         </div>
                     </div>
                     <div className="w-full">
+                        <h4>Learning</h4>
                         <Outlet />
                     </div>
                 </div>
