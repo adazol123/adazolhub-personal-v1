@@ -19,7 +19,7 @@ const Contact = () => {
                             <h4>Set an appointment</h4>
                             <span className='text-xs text-neutral-400'>Lets find a time to connect</span>
                         </div>
-                        <input type={'email'} placeholder='Email' />
+                        <input type={'email'} placeholder='Email' className='sm:min-w-[360px]' />
                         <input type={'text'} placeholder='Name' />
                         <textarea placeholder='How can we help you?' />
                         <div className='text-xs flex gap-1'>
