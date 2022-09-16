@@ -140,3 +140,5 @@ button._ghost {
 button._ghost:is(:hover, :focus) {
   @apply bg-neutral-700/5 text-neutral-700;
 }
+
+

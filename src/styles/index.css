@@ -90,3 +90,8 @@ button:is(:hover, :focus) {
 .link:is(:hover, :focus) {
   @apply bg-neutral-600/10 text-neutral-600;
 }
+
+input,
+textarea {
+  @apply px-2 py-3 text-sm outline-none border rounded-md;
+}
