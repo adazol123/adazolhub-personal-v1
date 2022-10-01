@@ -1,11 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Home from '.'
 import CardProject from '../components/ui/cards/Project'
 
 const Projects = () => {
+    useEffect(() => {
+        const observe = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                const item = entry.target
+                if (entry.isIntersecting) {
+
+                    item.classList.replace('opacity-0', 'opacity-1')
+                    item.classList.replace("translate-y-32", "translate-y-0")
+                }
+                // else {
+                //     item.classList.remove('opacity-0')
+                //     item.classList.remove("translate-y-32")
+                // }
+            })
+        }, {
+            rootMargin: '-20px'
+        })
+
+        let para = document.querySelectorAll('.intersection')
+        para.forEach(par => {
+            observe.observe(par)
+        })
+        return () => {
+            para.forEach(par => {
+                observe.unobserve(par)
+            })
+        }
+    }, [])
+
     return (
         <section className='text-neutral-400 space-y-8'>
-            <div className='flex lg:flex-row justify-between gap-4 flex-col-reverse  w-full mx-auto mt-2 mb-24'>
+            <div className='intersection translate-y-32 opacity-0 flex lg:flex-row justify-between gap-4 flex-col-reverse  w-full mx-auto mt-2 mb-24'>
                 <div>
                     <h4>Project</h4>
                     <p className='max-w-[100ch] mt-4'>Here are some of my project showcase during my learning journey as web developer.</p>

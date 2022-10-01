@@ -14,7 +14,7 @@ type Props = {
 
 const CardProject = (props: Props & Partial<Optional>) => {
     return (
-        <div className='flex gap-6 flex-col-reverse md:flex-row justify-between w-full min-h-[368px] sm:max-w-[344px] sm:min-w-[340px] lg:max-w-[460px] xl:max-w-[390px] 2xl:max-w-[480px]  relative bg-gradient-to-t from-gray-900  via-neutral-900 rounded-lg overflow-hidden'>
+        <div className='intersection translate-y-32 opacity-0 flex gap-6 flex-col-reverse md:flex-row justify-between w-full min-h-[368px] sm:max-w-[344px] sm:min-w-[340px] lg:max-w-[460px] xl:max-w-[390px] 2xl:max-w-[480px]  relative bg-gradient-to-t from-gray-900  via-neutral-900 rounded-lg overflow-hidden'>
             <img src={props.img_url} alt={props.title} className='absolute w-full inset-y-0 left-0 object-cover  mix-blend-multiply ' />
             <div className='absolute  w-full h-fit bottom-0 px-6 py-6 md:py-8 space-y-3'>
                 {props.tags?.length && <div className='flex gap-1 mb-1 '>
@@ -29,9 +29,9 @@ const CardProject = (props: Props & Partial<Optional>) => {
                     <p className='text-sm opacity-50 max-w-[80%] mb-4'>{props.description}</p>
                 </div>
 
-                <div className='flex gap-3 w-fit '>
-                    <button className='text-sm bg-white text-black/80'>View Details</button>
-                    <button className='text-sm'>Repository (Github)</button>
+                <div className='flex gap-3 flex-col sm:flex-row w-fit '>
+                    <button className='text-sm w-fit bg-white text-black/80'>View Details</button>
+                    <button className='text-sm w-fit'>Repository (Github)</button>
                 </div>
             </div>
 

@@ -95,3 +95,7 @@ input,
 textarea {
   @apply px-2 py-3 text-sm outline-none border rounded-md;
 }
+
+.intersection {
+  @apply duration-500;
+}

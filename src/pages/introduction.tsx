@@ -46,10 +46,11 @@ const Introduction = () => {
                             <h1 className='intersection max-w-[10ch] leading-relaxed sm:max-w-full sm:whitespace-nowrap opacity-0 transition-all duration-500 translate-y-32'>Hey there, I'm <span>Daniel</span></h1>
                             <h3 className='intersection opacity-0 transition-all duration-500 translate-y-32'  >Aspiring full-stack developer, Self-taught programmer, career shifter</h3>
 
+
+
+                            <p className='intersection max-w-[100ch] transition-all opacity-0 translate-y-32 duration-500'>My name is Daniel Josaphat Lozada. I am a System Engineer (Service Desk Analyst) by profession where I performed technical support to company's clients through various channels such as phone-call, remote access, and live chat. And a developer as a hobby doing hands-on coding on my spare time. I recently took a career break to focus on up-skilling my knowledge in software development, self studying in various technology stack align with web/mobile app development. I am also looking for a position where I can enhance, expand, and upskill my current skillsets.</p>
+
                             <p className='intersection italic transition-all translate-y-32 opacity-0  duration-500'>I help business grow by crafting amazing web experiences. If you're looking for a designer and developer that likes to get stuff done. let's talk</p>
-
-                            <p className='intersection max-w-[100ch] transition-all opacity-0 translate-y-32 duration-500'>My name is Daniel Josaphat Lozada. Started off my career as an Associate System Engineer 3 years ago with Tata Consultancy Services, Where I performed technical support to company's clients through phone-call and remote access. Recently decided to shift career to a development field where I see my dedication and passion as an aspiring full-stack developer. Currently self studying in various technology stack align with web app development. I am also looking for a position where I can enhance, expand, and upskill my current skillsets.</p>
-
 
                             <div className='flex gap-2'>
                                 <button type='button' className='_solid' onClick={() => navigate('resume')}>Resume</button>
@@ -86,13 +87,18 @@ const Introduction = () => {
                             />
                         </div>
                     </div>
-                    <div className="cta bg-gradient-to-r sm:bg-neutral-700 from-black via-neutral-800 to-neutral-400 rounded-md min-w-full mx-auto p-6 relative min-h-[200px] md:min-h-[300px] lg:min-h-[160px] overflow-hidden">
-                        <img src='https://images.unsplash.com/photo-1661961111247-e218f67d1cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80' alt=''
-                            srcSet='https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 480w, https://images.unsplash.com/photo-1661961111247-e218f67d1cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80 700w' className='absolute inset-0 mix-blend-overlay md:mix w-full object-contain lg:hidden' />
-                        <div className='grid place-items-start md:place-content-center md:place-items-center absolute inset-0 gap-4 p-6
+                    <div className="cta intersection translate-y-32 opacity-0 bg-gradient-to-r sm:bg-neutral-700 from-black via-neutral-800 to-neutral-400 rounded-md min-w-full mx-auto p-6 relative min-h-[200px] md:min-h-[300px] lg:min-h-[160px] overflow-hidden">
+                        <img src='https://images.unsplash.com/photo-1661961111247-e218f67d1cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80' alt=''
+                            srcSet='https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80 480w, https://images.unsplash.com/photo-1661961111247-e218f67d1cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80 700w' className='absolute inset-0 mix-blend-overlay md:mix w-full object-contain lg:hidden' />
+                        <div className='grid place-items-start justify-start md:place-content-center md:justify-center md:place-items-center absolute inset-0  p-6
                         '>
-                            <p className='max-w-[24ch] md:text-center'>Let's convert your concept project to reality.</p>
-                            <button className=' border-white text-white w-fit'>Let's Talk</button>
+                            <div className='place-self-end md:place-self-center gap-2 grid'>
+
+                                <p className='max-w-[24ch] md:text-center'>Let's convert your project idea into profitable product.</p>
+                                <button className=' border-white text-neutral-800 bg-neutral-100 w-fit md:mx-auto'
+                                    onClick={() => navigate('/contact')}
+                                >Let's Talk</button>
+                            </div>
                         </div>
 
                     </div>
