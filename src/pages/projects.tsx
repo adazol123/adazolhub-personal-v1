@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from '.'
+import CardProject from '../components/ui/cards/Project'
 
 const Projects = () => {
     return (
@@ -22,72 +23,32 @@ const Projects = () => {
                 {/* <p className='absolute bottom-0 left-0 z-10 h-60 text-black'>Project</p> */}
 
             </div>
-            <div>
+            <div className=''>
 
-                <div className='flex flex-col gap-24'>
-                    <div className='flex gap-6 flex-col md:flex-row justify-between'>
-                        <div className='w-fit'>
-                            <h1>Adazolhub</h1>
-                            <p>Adazolhub is a concept software development services</p>
+                <div className='flex flex-wrap gap-6 mx-auto'>
+                    <CardProject
+                        title="Adazolhub | shop"
+                        description='Adazolhub is a concept software development services'
+                        img_url='/images/mock-03.png'
+                        tags={['Next JS', 'Firebase', 'Chakra UI']}
 
-                            <h3>Hello</h3>
-                            <div className='flex gap-2 flex-col lg:flex-row w-fit'>
-                                <button>Source Code</button>
-                                <button>Design Process</button>
-                                <button>Live Site</button>
+                    />
+                    <CardProject
+                        title="Entrepreneurs' Portfolio"
+                        description='Adazolhub is a concept software development services'
+                        img_url='/images/mock-02.png'
+                        tags={['Next JS', 'Firebase', 'Redux Toolkit']}
+                        live_url='https://entrepreneursportfolio.com'
+                    />
+                    <CardProject
+                        title="Discord Bots"
+                        description='Automating the process/task on discord server.'
+                        img_url='/images/mock-04.png'
+                        tags={['Node JS', 'Discord API']}
+                        live_url='https://github/com/adazol123'
+                    />
 
-                            </div>
-                        </div>
-                        <img src='/images/mock-01.png' alt='' className='w-full md:w-[40vw]' />
-                    </div>
-                    <div className='flex gap-6 flex-col-reverse md:flex-row justify-between'>
-                        <img src='/images/mock-02.png' alt='' className='w-full md:w-[40vw]' />
-                        <div className='w-fit'>
-                            <h1>Entrepreneurs' Portfolio</h1>
-                            <p>Adazolhub is a concept software development services</p>
 
-                            <h3>Hello</h3>
-                            <div className='flex gap-6 flex-col md:flex-row w-fit'>
-                                <button>Source Code</button>
-                                <button>Design Process</button>
-                                <button>Live Site</button>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className='flex gap-6 flex-col md:flex-row justify-between'>
-                        <div className='w-fit'>
-                            <h1>Adazolhub | shop</h1>
-                            <p>Adazolhub is a concept software development services</p>
-
-                            <h3>Hello</h3>
-                            <div className='flex gap-6 flex-col md:flex-row w-fit'>
-                                <button>Source Code</button>
-                                <button>Design Process</button>
-                                <button>Live Site</button>
-
-                            </div>
-                        </div>
-                        <img src='/images/mock-03.png' alt='' className='w-full md:w-[40vw]' />
-
-                    </div>
-                    <div className='flex gap-6 flex-col-reverse md:flex-row justify-between'>
-                        <img src='/images/mock-04.png' alt='' className='w-full md:w-[40vw]' />
-                        <div className='w-fit'>
-                            <h1>Discord Bots</h1>
-                            <p>Automatic some of the process task on discord server.</p>
-
-                            <h3>Hello</h3>
-                            <div className='flex gap-6 flex-col md:flex-row w-fit'>
-                                <button>Source Code</button>
-                                <button>Design Process</button>
-                                <button>Live Site</button>
-
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </section>

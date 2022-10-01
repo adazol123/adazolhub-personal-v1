@@ -13,28 +13,35 @@ const Contact = () => {
             </div>
             <div className='flex flex-col sm:flex-row-reverse gap-16'>
 
-                <div className='p-[3px] relative rounded-xl bg-gradient-to-br from-[#AC35E4] via-[#EA197D] to-[#DE6E06] mt-10'>
-                    <form className=' flex flex-col gap-4 py-6 px-4 bg-white max-w-screen-sm rounded-lg text-neutral-500'>
+                <div className='p-[2px] relative rounded-2xl bg-gradient-to-br from-[#AC35E4] via-[#EA197D] to-[#DE6E06] mt-10'>
+                    <form className=' flex flex-col gap-4 py-6 px-4 bg-white max-w-screen-sm rounded-2xl text-neutral-500'>
                         <div>
                             <h4>Set an appointment</h4>
                             <span className='text-xs text-neutral-400'>Lets find a time to connect</span>
                         </div>
-                        <input type={'email'} placeholder='Email' className='sm:min-w-[360px]' />
-                        <input type={'text'} placeholder='Name' />
-                        <textarea placeholder='How can we help you?' />
-                        <div className='text-xs flex gap-1'>
+                        <div className='flex flex-col gap-3 p-3 border border-dotted rounded-lg'>
+                            {/* <label >Sender</label> */}
+                            <input type={'text'} placeholder='Name: (e.g. John Doe)' />
+                            <input type={'email'} placeholder='Email: (e.g. john.doe@email.com)' className='sm:min-w-[360px]' />
+                        </div>
+                        <div className='flex flex-col gap-3 p-3 border border-dotted rounded-lg'>
+                            {/* <label >Content</label> */}
+                            <input type={'text'} placeholder='Subject: (e.g. Need help deploying my website code live)' />
+                            <textarea className='min-h-[40px]' placeholder='How can we help you?' />
+                        </div>
+                        <div className='text-xs flex gap-1 opacity-50 px-3'>
                             <span>Send to:</span>
                             <span className='text-neutral-400'>dpadayao40@outlook.ph</span>
                         </div>
-                        <button className='_solid px-12 py-3 w-fit self-end' type='button'>Submit</button>
+                        <button className='_solid px-12 py-3 w-fit self-end bg-gradient-to-br  from-[#EA197D] to-[#DE6E06]' type='button'>Submit</button>
                     </form>
                 </div>
-                <div className='flex-1 p-6'>
+                <div className='flex-1 px-6 py-10'>
                     <h4>Say hi</h4>
-                    <div className='flex flex-col gap-2 '>
-                        <button>Discord</button>
-                        <button>Messenger</button>
-                        <button>Live Chat (Beta)</button>
+                    <div className='flex flex-col gap-2 mt-3'>
+                        <button className='whitespace-nowrap'>Discord (Soon)</button>
+                        <button className='whitespace-nowrap'>Messenger (Soon)</button>
+                        <button className='whitespace-nowrap'>Live Chat (Soon)</button>
                     </div>
                 </div>
             </div>

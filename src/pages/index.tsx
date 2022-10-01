@@ -10,7 +10,7 @@ const Home = () => {
                 <HomeMenuTabs to='/introduction' >Introduction</HomeMenuTabs>
                 <HomeMenuTabs to='/projects' >Projects</HomeMenuTabs>
                 <HomeMenuTabs to='/ux-case-study' >UX Case Study</HomeMenuTabs>
-                <HomeMenuTabs to='/learning' >Learning</HomeMenuTabs>
+                {/* <HomeMenuTabs to='/learning' >Learning</HomeMenuTabs> */}
                 <HomeMenuTabs to='/contact' >Contact</HomeMenuTabs>
             </nav>
         </section>

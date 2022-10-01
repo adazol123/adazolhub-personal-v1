@@ -104,8 +104,8 @@ const Introduction = () => {
                 </div>
                 <div className='md:flex flex-col sticky top-16 gap-4  whitespace-nowrap self-start p-6 hidden'>
                     <a href="#introduction">Introduction</a>
-                    <a href="#tech-stacks">Technology Stack</a>
                     <a href="#services">Services Offer</a>
+                    <a href="#tech-stacks">Technology Stack</a>
                 </div>
 
 

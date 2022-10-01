@@ -65,9 +65,9 @@ const NavOverlay = (props: Props) => {
                     <Link onClick={toggleMenu} to={'/ux-case-study'}>
                         <motion.span variants={item}>UX Case Study</motion.span>
                     </Link>
-                    <Link onClick={toggleMenu} to={'/learning'}>
+                    {/* <Link onClick={toggleMenu} to={'/learning'}>
                         <motion.span variants={item}>Learning</motion.span>
-                    </Link>
+                    </Link> */}
                     <Link onClick={toggleMenu} to={'/contact'}>
                         <motion.span variants={item}>Contact</motion.span>
                     </Link>

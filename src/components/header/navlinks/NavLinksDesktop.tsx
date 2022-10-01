@@ -10,7 +10,7 @@ const NavLinksDesktop = () => {
             <NavTabs to={'/introduction/#introduction'}>Introduction</NavTabs>
             <NavTabs to={'/projects'}>Projects</NavTabs>
             <NavTabs to={'/ux-case-study'}>UX Case Study</NavTabs>
-            <NavTabs to={'/learning'}>Learning</NavTabs>
+            {/* <NavTabs to={'/learning'}>Learning</NavTabs> */}
             <NavTabs to={'/contact'}>Contact</NavTabs>
         </nav>
     )
