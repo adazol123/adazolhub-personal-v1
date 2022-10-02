@@ -31,10 +31,10 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <React.Suspense fallback={<div className='min-h-screen grid place-content-center place-items-center gap-2'>
         <h5>ADAZOLHUB</h5>
-        <p>
-          Loading ...
+        <span className='relative h-6 w-16'>
+          <img className='absolute inset-0' src='/images/1484.gif' alt='loading...' />
 
-        </p>
+        </span>
       </div>}>
 
         <main>
