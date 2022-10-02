@@ -87,7 +87,7 @@ const Introduction = () => {
                             />
                         </div>
                     </div>
-                    <div className="cta intersection translate-y-32 opacity-0 bg-gradient-to-r sm:bg-neutral-700 from-black via-neutral-800 to-neutral-400 rounded-md min-w-full mx-auto p-6 relative min-h-[200px] md:min-h-[300px] lg:min-h-[160px] overflow-hidden">
+                    <div className="cta intersection translate-y-32 opacity-0 bg-gradient-to-r sm:bg-neutral-700 from-black via-neutral-800 to-neutral-400 rounded-2xl min-w-full mx-auto p-6 relative min-h-[200px] md:min-h-[300px] lg:min-h-[160px] overflow-hidden">
                         <img src='https://images.unsplash.com/photo-1661961111247-e218f67d1cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80' alt=''
                             srcSet='https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80 480w, https://images.unsplash.com/photo-1661961111247-e218f67d1cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80 700w' className='absolute inset-0 mix-blend-overlay md:mix w-full object-contain lg:hidden' />
                         <div className='grid place-items-start justify-start md:place-content-center md:justify-center md:place-items-center absolute inset-0  p-6

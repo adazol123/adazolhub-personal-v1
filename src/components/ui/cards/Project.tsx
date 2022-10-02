@@ -4,6 +4,7 @@ type Optional = {
     tags: string[],
     live_url: string,
     repository_url: string,
+    status: string
 }
 
 type Props = {
@@ -29,16 +30,20 @@ const CardProject = (props: Props & Partial<Optional>) => {
                     <p className='text-sm opacity-50 max-w-[80%] mb-4'>{props.description}</p>
                 </div>
 
-                <div className='flex gap-3 flex-col sm:flex-row w-fit '>
-                    <button className='text-sm w-fit bg-white text-black/80'>View Details</button>
-                    <button className='text-sm w-fit'>Repository (Github)</button>
-                </div>
+                {props.live_url ? <div className='flex gap-3 flex-col sm:flex-row w-fit '>
+                    <a href={props.live_url} rel='noreferrer' target='_blank' className='text-sm w-fit bg-white text-black/80 px-6 py-2 rounded-full'>Visit Site</a>
+                    <a href={props.repository_url} rel='noreferrer' target='_blank' className='text-sm w-fit px-6 py-2 rounded-full border border-neutral-400/10'>Repository (Github)</a>
+                </div> :
+                    <div className='flex gap-3 flex-col sm:flex-row w-fit '>
+                        <a href={props.repository_url} rel='noreferrer' target='_blank' className='text-sm w-fit bg-white text-black/80 px-6 py-2 rounded-full '>Repository (Github)</a>
+
+                    </div>}
             </div>
 
             {
-                props.live_url ?
+                props.status ?
                     <button className='absolute bg-gradient-to-br  from-[#EA197D]/90 to-[#DE6E06]/90 backdrop-blur-[1px] h-10 w-fit top-0 right-0 text-white rounded-none border-none rounded-bl-2xl px-12 py-2 shadow-md shadow-orange-900/50'>
-                        <span className='text-xs'>Live Site</span>
+                        <span className='text-xs'>{props.status}</span>
                     </button>
                     :
                     <button className='absolute bg-gradient-to-br  from-[#e6ce15] to-[#DE6E06] backdrop-blur-[1px] h-10 w-fit top-0 right-0 text-white rounded-none border-none rounded-bl-2xl px-12 py-2 shadow-md shadow-orange-900/50'>

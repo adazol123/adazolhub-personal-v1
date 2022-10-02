@@ -7,7 +7,7 @@ interface CardOfferProps {
 
 const CardOffer = (props: CardOfferProps) => {
     return (
-        <div className='intersection translate-y-32 opacity-0 flex gap-4 justify-between items-center pl-4 md:pl-8 shadow w-full rounded-md hover:shadow-lg border border-neutral-100'>
+        <div className='intersection translate-y-32 opacity-0 flex gap-4 justify-between items-center pl-4 md:pl-8 shadow w-full rounded-2xl hover:shadow-lg border border-neutral-100 overflow-hidden'>
             <div>
                 <h3 className='max-w-[30ch] text-lg md:text-xl mb-6 font-semibold'>{props.title}</h3>
                 <p className=' max-w-[20ch] md:max-w-[30ch] text-sm'>

@@ -14,7 +14,11 @@ const UXCaseStudy = () => {
             <div className='grid min-h-[calc(60vh)] place-content-center place-items-center gap-6 text-neutral-600'>
 
                 <h4>UX Case Study</h4>
-                <p className='max-w-[30ch] text-center text-neutral-400'>Currently building user interface and user experience case studies</p>
+                <p className='max-w-[30ch] text-center text-neutral-400'>Currently building user interface and user experience case studies. To see some sample UI design.</p>
+
+                <a href="https://www.behance.net/adazolhub" rel='noreferrer' target='_blank'
+                    className='px-6 py-2 rounded-full border border-neutral-400/10 text-neutral-600 text-sm'
+                >Check Behance Profile</a>
             </div></section>
     )
 }
