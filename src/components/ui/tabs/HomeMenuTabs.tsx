@@ -10,21 +10,25 @@ interface CustomNavLink {
 function HomeMenuTabs(props: CustomNavLink) {
     const { pathname } = useLocation()
     console.log(pathname)
+
     return (
-        <NavLink to={props.to}>{({ isActive }) => (
-            <>
-                <motion.span
-                    layoutId={`header__name__${props.to.split('/')[1]}`}
-                    initial={{ x: 400 }}
-                    animate={{ x: 0 }}
+        <NavLink to={props.to}>{({ isActive }) => {
+            
+            return (
+                <>
+                    <motion.span
+                        layoutId={`header__name__${props.to.split('/')[1]}`}
+                        initial={{ x: 400 }}
+                        animate={{ x: 0 }}
 
-                >{props.children}</motion.span>
+                    >{props.children}</motion.span>
 
-                <div
-                    className={`__home_menu_active_links ${isActive && 'active'}`}
-                />
-            </>
-        )}</NavLink>
+                    <div
+                        className={`__home_menu_active_links ${isActive && 'active'}`}
+                    />
+                </>
+            )
+        }}</NavLink>
     )
 }
 

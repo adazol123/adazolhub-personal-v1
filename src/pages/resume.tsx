@@ -52,7 +52,7 @@ const Resume = (props: Props) => {
                     <span>Web Developer</span>
                 </div>
 
-                <a className='py-3 px-6 rounded-full text-white bg-neutral-700 text-xs' href="https://firebasestorage.googleapis.com/v0/b/bscpe-store-v2.appspot.com/o/Daniel-Lozada_SD.pdf?alt=media&token=2efda9d5-0e36-459f-9736-a01987e3e8e6" target="_blank" >Download Resume</a>
+                <a className='py-3 px-6 rounded-full text-white bg-neutral-700 text-xs' href="https://firebasestorage.googleapis.com/v0/b/daniel-lozada.appspot.com/o/resume%2FDaniel%20Lozada%20-%20SWD.pdf?alt=media&token=06b6ba32-501d-4b34-854b-812aecb4ba0c" target="_blank" >Download Resume</a>
             </div>
             <div className=' flex flex-col justify-between gap-4   w-full mx-auto mt-6'>
                 <div className='intersection translate-y-32 opacity-0 flex justify-between gap-6 flex-col-reverse sm:flex-row w-full'>

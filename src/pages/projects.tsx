@@ -57,11 +57,21 @@ const Projects = () => {
                 <div className='flex flex-wrap gap-6 mx-auto'>
                     <CardProject
                         title="Adazolhub | shop"
-                        description='Adazolhub | Shop is the redesigned and rebranded version of e-commerce clothing web-app named BSCPE Store'
+                        description='Adazolhub | Shop is the redesigned and rebranded version of e-commerce clothing web-app named BSCPE Store.'
                         img_url='/assets/mock-adazolhub-shop-02.png'
                         tags={['Next JS', 'Firebase', 'Redux Toolkit', 'Vercel']}
                         live_url='https://bscpe-store-beta.vercel.app'
                         repository_url='https://github.com/adazol123/adazolhub_shop'
+
+                    />
+                    <CardProject
+                        title="Winners Circle Guild"
+                        description='Winners Circle Guild is Play To Earn Community on Discord Server. Providing Potential earning by playing WEB3 based online games (NFT).'
+                        img_url='/assets/winners-circle.png'
+                        tags={['Vue JS', 'Firebase Hosting', 'Discord BOT']}
+                        live_url='https://winnerscircleguild.web.app'
+                        repository_url='https://github.com/adazol123/winners-circle-guild'
+                        status='Live Site'
 
                     />
                     <CardProject

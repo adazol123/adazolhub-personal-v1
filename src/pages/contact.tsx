@@ -26,14 +26,14 @@ const Contact = () => {
                         </div>
                         <div className='flex flex-col gap-3 p-3 border border-dotted rounded-lg'>
                             {/* <label >Content</label> */}
-                            <input type={'text'} placeholder='Subject: (e.g. Need help deploying my website code live)' />
-                            <textarea className='min-h-[40px]' placeholder='How can we help you?' />
+                            <input type={'text'} placeholder='Subject: (e.g. Website Deployment)' />
+                            <textarea className='min-h-[40px]' placeholder='How can we help you? : (e.g. Need help deploying my website code live)' />
                         </div>
                         <div className='text-xs flex gap-1 opacity-50 px-3'>
                             <span>Send to:</span>
                             <span className='text-neutral-400'>dpadayao40@outlook.ph</span>
                         </div>
-                        <button className='_solid px-12 py-3 w-fit self-end bg-gradient-to-br  from-[#EA197D] to-[#DE6E06]' type='button'>Submit</button>
+                        <button className='_solid px-12 py-3 w-fit self-end bg-gradient-to-br  from-[#EA197D] to-[#DE6E06]' >Submit</button>
                     </form>
                 </div>
                 <div className='flex-1 px-6 py-10'>

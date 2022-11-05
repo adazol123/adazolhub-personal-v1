@@ -11,7 +11,7 @@ const HeaderNav = () => {
     return (
         <>
             <header ref={ref}>
-                <div className="navigation">
+                <div className={`navigation ${pathname !== '/' ? 'bg-white' : ''}`}>
                     <Link to={'/'}>
                         <span >Adazolhub | Personal</span>
                     </Link>

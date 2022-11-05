@@ -27,12 +27,12 @@ const CardProject = (props: Props & Partial<Optional>) => {
                 </div>}
                 <div className='flex flex-col gap-1'>
                     <p className='text-white'>{props.title}</p>
-                    <p className='text-sm opacity-50 max-w-[80%] mb-4'>{props.description}</p>
+                    <p className='text-sm opacity-75 max-w-[80%] mb-4'>{props.description}</p>
                 </div>
 
-                {props.live_url ? <div className='flex gap-3 flex-col sm:flex-row w-fit '>
-                    <a href={props.live_url} rel='noreferrer' target='_blank' className='text-sm w-fit bg-white text-black/80 px-6 py-2 rounded-full'>Visit Site</a>
-                    <a href={props.repository_url} rel='noreferrer' target='_blank' className='text-sm w-fit px-6 py-2 rounded-full border border-neutral-400/10'>Repository (Github)</a>
+                {props.live_url ? <div className='flex gap-3 flex-wrap w-fit '>
+                    <a href={props.live_url} rel='noreferrer' target='_blank' className='text-sm w-fit whitespace-nowrap bg-white text-black/80 px-6 py-2 rounded-full'>Visit Site</a>
+                    <a href={props.repository_url} rel='noreferrer' target='_blank' className='text-sm whitespace-nowrap w-fit px-6 py-2 rounded-full border border-neutral-400/10'>Repository (Github)</a>
                 </div> :
                     <div className='flex gap-3 flex-col sm:flex-row w-fit '>
                         <a href={props.repository_url} rel='noreferrer' target='_blank' className='text-sm w-fit bg-white text-black/80 px-6 py-2 rounded-full '>Repository (Github)</a>
