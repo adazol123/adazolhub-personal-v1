@@ -99,3 +99,9 @@ textarea {
 .intersection {
   @apply duration-500;
 }
+
+ul{
+  list-style: inside;
+  list-style-type: '- ';
+  @apply text-neutral-500/80 font-light;
+}

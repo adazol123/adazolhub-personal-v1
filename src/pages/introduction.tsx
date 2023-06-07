@@ -2,7 +2,7 @@ import React, { createRef, useEffect, useRef, useState } from 'react'
 import { useLocation, useRoutes, useNavigate, useHref } from 'react-router-dom'
 import TechStack from '../components/techstack/TechStack'
 import CardOffer from '../components/ui/cards/Offer'
-import CardProfile from './../components/ui/cards/Profile';
+import CardProfile from '../components/ui/cards/Profile';
 
 const Introduction = () => {
     const navigate = useNavigate()
@@ -40,7 +40,7 @@ const Introduction = () => {
         <>
             <section className='text-neutral-400 space-y-3 flex'>
 
-                <div className='col-span-10 flex flex-col gap-16'>
+                <div className='col-span-10 flex flex-col gap-16 container'>
                     <div className='flex lg:flex-row justify-between gap-4 flex-col-reverse w-full mx-auto mt-10'>
                         <div id='introduction' className='flex flex-col gap-6 scroll-m-4'>
                             <h4 >Introduction</h4>
