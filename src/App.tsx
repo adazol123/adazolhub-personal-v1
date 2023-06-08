@@ -1,6 +1,6 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query'
 import { AnimatePresence } from 'framer-motion'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import FooterContact from './components/footer/contact/FooterContact'
@@ -21,6 +21,7 @@ import GettingStarted from './components/learning/GettingStarted'
 import useScrollToTop from './utils/helper/useScrollToTop';
 import ImagePreviewWithFileReader from './components/learning/ImagePreviewWithFileReader'
 import DeviceDetector from 'device-detector-js';
+import { incrementCount } from './api/firebase';
 
 const queryClient = new QueryClient()
 
@@ -28,10 +29,7 @@ function App() {
   useScrollToTop()
   const [count, setCount] = useState(0)
   const menuState = useToggleStore(state => state.menu)
-  const dd = new DeviceDetector();
-  const userAgent  = navigator.userAgent;
-  const device = dd.parse(userAgent)
-  console.log(device)
+  
   return (
     <QueryClientProvider client={queryClient}>
       <React.Suspense fallback={<div className='min-h-screen grid place-content-center place-items-center gap-2'>
