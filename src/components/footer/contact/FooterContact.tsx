@@ -11,7 +11,7 @@ const FooterContact = () => {
         <footer>
             <div className="__footer_contact">
                 <div className='space-y-6'>
-                    <span className='text-neutral-400/75 text-base font-light'>Unique visitors: <strong className='text-neutral-500 font-light'>{data?.counts}</strong></span>
+                    <span className='text-neutral-400/75 text-base font-light'>Unique visitors: <strong className='text-neutral-500 font-light'>{data?.counts ?? '00'}</strong></span>
 
                     <div className='flex flex-col'>
                         <span className='text-neutral-400 font-normal    text-xs'>Contact me</span>
