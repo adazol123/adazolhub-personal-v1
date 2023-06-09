@@ -7,16 +7,10 @@ import { QueryClient, useQuery } from '@tanstack/react-query';
 import DeviceDetector from 'device-detector-js';
 import { incrementCount } from '../api/firebase';
 
-const fetchData = async () => {
-  const dd = new DeviceDetector();
-  const userAgent  = navigator.userAgent;
-  const device = dd.parse(userAgent)
-  return await incrementCount({ device })
-}
+
 const Introduction = () => {
     const navigate = useNavigate()
-    const { data, error } = useQuery(['unique_visit'], fetchData, { refetchOnWindowFocus: false, cacheTime: 120000 })
-    console.log(data)
+    
     useEffect(() => {
         const observe = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {

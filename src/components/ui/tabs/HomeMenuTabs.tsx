@@ -9,7 +9,6 @@ interface CustomNavLink {
 
 function HomeMenuTabs(props: CustomNavLink) {
     const { pathname } = useLocation()
-    console.log(pathname)
 
     return (
         <NavLink to={props.to}>{({ isActive }) => {
