@@ -34,7 +34,6 @@ function App () {
   useScrollToTop()
   const menuState = useToggleStore(state => state.menu)
 
-
   // /api/organizations/@current
   // posthog.capture('my event', { property: 'value' })
 
@@ -89,6 +88,7 @@ function App () {
         </React.Suspense>
       </QueryClientProvider>
     </PostHogProvider>
+
   )
 }
 

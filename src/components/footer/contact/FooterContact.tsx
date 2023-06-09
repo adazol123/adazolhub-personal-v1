@@ -26,6 +26,7 @@ const FooterContact = () => {
                     {/* <span className='text-neutral-400/75 text-sm font-light block'>Unique visitors: <strong className='text-neutral-500 font-light'>{data?.counts ?? '00'}</strong></span> */}
                     <span className='text-neutral-400/75 text-sm font-light'>Unique visitors: <strong className='text-neutral-500 font-light'>{visitors?.results.length ?? '00'}</strong></span>
 
+
                     <div className='flex flex-col'>
                         <span className='text-neutral-400 font-normal    text-xs'>Contact me</span>
                         <a className='text-neutral-600 font-normal' href='mailto:dpadayao40@outlook.ph' >dpadayao40@outlook.ph</a>
