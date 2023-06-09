@@ -6,7 +6,7 @@ const fetchData = async () => {
   }
 
 const fetchVisitors = async () => {
-    const data = await fetch('https://app.posthog.com/api/organizations/0188a053-fec0-0000-f5f2-b55cce0b7ab3/members', {
+    const data = await fetch('https://app.posthog.com/api/projects/28344/persons', {
         headers: {
           'Authorization': `Bearer phx_zg1qCtlSanOgL14gFo1VZr69MQtVq19yQEwMlesjBf4`
         }
@@ -23,8 +23,9 @@ const FooterContact = () => {
         <footer>
             <div className="__footer_contact">
                 <div className='space-y-6'>
-                    <span className='text-neutral-400/75 text-sm font-light block'>Unique visitors: <strong className='text-neutral-500 font-light'>{data?.counts ?? '00'}</strong></span>
-                    {/* <span className='text-neutral-400/75 text-sm font-light'>Unique visitors: <strong className='text-neutral-500 font-light'>{visitors?.count ?? '00'}</strong></span> */}
+                    {/* <span className='text-neutral-400/75 text-sm font-light block'>Unique visitors: <strong className='text-neutral-500 font-light'>{data?.counts ?? '00'}</strong></span> */}
+                    <span className='text-neutral-400/75 text-sm font-light'>Unique visitors: <strong className='text-neutral-500 font-light'>{visitors?.results.length ?? '00'}</strong></span>
+
 
                     <div className='flex flex-col'>
                         <span className='text-neutral-400 font-normal    text-xs'>Contact me</span>
