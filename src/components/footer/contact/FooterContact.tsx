@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useState } from 'react'
 import { getVisitCounts } from '../../../api/firebase';
+import ChatWidget from '../../widgets/chats/ChatWidget';
 const fetchData = async () => {
     return await getVisitCounts()
   }
@@ -42,6 +43,7 @@ const FooterContact = () => {
                 </div>
                 <a href='https://adazolhub.com' className='__copyright'>© Copyright 2022 Adazolhub.com | All rights reserved.</a>
             </div>
+            <ChatWidget/>
         </footer>
     )
 }
